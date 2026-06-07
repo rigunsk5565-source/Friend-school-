@@ -1,0 +1,23 @@
+body{
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f4f4f4;
+margin:0;
+}
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+width:320px;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+input,button{
+width:100%;
+padding:12px;
+margin:8px 0;
+box-sizing:border-box;
+}
+button{cursor:pointer;}
