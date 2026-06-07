@@ -1,23 +1,68 @@
-body{
-font-family:Arial,sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-background:#f4f4f4;
-margin:0;
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* A beautiful modern gradient instead of flat gray */
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  margin: 0;
 }
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-width:320px;
-box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+.card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 340px;
+  /* Softer, richer modern shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-input,button{
-width:100%;
-padding:12px;
-margin:8px 0;
-box-sizing:border-box;
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  /* Makes input border glow smoothly when clicked */
+  transition: all 0.3s ease;
 }
-button{cursor:pointer;}
+
+/* Beautiful focus state when you click/tap inside an input */
+input:focus {
+  border-color: #2575fc;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 117, 252, 0.15);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0 0 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* Gradient button matching the background */
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+  /* Smooth scale transition when pressed */
+  transition: all 0.2s ease;
+}
+
+/* Button interactions */
+button:hover {
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.4);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
